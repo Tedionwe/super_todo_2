@@ -1,5 +1,22 @@
 console.log("v.2.2");
 
+class Auth{
+    constructor(){
+        this.isAuthenticated();
+    }
+
+    isAuthenticated(){
+        if(true){
+            if (location.href.includes('login.html'))return; 
+           setTimeout(()=>( location.href ="./login.html"), 3000);
+        }
+     }
+     
+
+}
+
+const auth = new Auth();
+
 // const submitInput = document.querySelector('#btn');
 // document.querySelector('#username').value;
 
